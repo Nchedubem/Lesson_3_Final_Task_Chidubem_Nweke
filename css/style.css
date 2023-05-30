@@ -51,3 +51,550 @@ table {
 
 
 /* Write your css below here */
+
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+header {
+    height: 90px;
+    width: 100%;
+    background-color: #002ead;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+.navbar {
+    height: 38px;
+    width: 100%;
+    background-color: #0a0a23;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.nav-left {
+    width: 35%;
+    background-color: #3b3b4f;
+    align-items: center;
+    display: none;
+}
+
+.nav-left input {
+    width: 90%;
+    height: 26px;
+    background-color: #3b3b4f;
+    border: none;
+    outline: none;
+    color: #fff;
+    font-size: 18px;
+}
+
+.material-icons {
+    color: #b2b2ba;
+}
+
+.nav-left input::placeholder {
+    font-family: Lato, sans-serif;
+    color: #b2b2ba;
+    font-size: 18px;
+}
+
+.nav-logo {
+    width: 30%;
+    height: 100%;
+}
+
+.nav-logo img {
+    width: 100%;
+    height: 10px;
+    object-fit: cover;
+}
+
+.nav-right {
+    width: 35%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+footer a {
+    color: #1b1b32;
+    text-decoration: none;
+}
+
+.nav-right a {
+    padding: 10px;
+    font-size: 18px;
+    color: #fff;
+    font-family: "Roboto Mono", monospace;
+    text-decoration: none;
+    margin-right: 25px;
+    display: none;
+}
+
+button {
+    font-family: Lato, sans-serif;
+}
+
+.nav-right button {
+    background-color: #feac32;
+    background-image: linear-gradient(#fecc4c, #ffac33);
+    border: 3px solid #feac32;
+    height: 28px;
+    width: 92px;
+    font-size: 18px;
+    font-family: Lato, sans-serif;
+    cursor: pointer;
+}
+
+.text-bar {
+    height: 42px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main {
+    width: 86%;
+    margin: auto;
+    padding: 10px 0;
+    margin-top: 90px;
+    letter-spacing: 1px;
+    line-height: 1.15;
+    text-align: left;
+    font-family: Lato, sans-serif;
+}
+
+.date {
+    font-size: 14px;
+    font-weight: 850;
+	margin-top: 20px;
+}
+
+.date a {
+    text-decoration: none;
+}
+
+main h1 {
+    font-size: 32px;
+    margin-top: 15px;
+}
+
+.author {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.author a {
+    font-size: 14px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    margin-left: 20px;
+}
+
+.blog {
+    width: 100%;
+    margin-top: 25px;
+    display: none;
+}
+
+.blog img {
+    width: 100%;
+}
+
+.blog-2 {
+    width: 100%;
+}
+
+.blog-2 p {
+    margin-top: 25px;
+    margin-bottom: 33px;
+    font-size: 19px;
+    line-height: 1.6em;
+}
+
+.blog-2 img {
+    width: 100%;
+    margin-top: 33px;
+}
+
+.blog-2 p.label {
+    font-size: 15.3px;
+    text-align: center;
+    margin-top: 5px;
+}
+
+.blog-2 ul {
+    list-style: disc;
+    font-size: 19px;
+    margin-left: 20px;
+}
+
+.blog-2 ul li {
+    margin: 22px 0;
+}
+
+.blog-2 p.link {
+    margin-top: 40px;
+}
+
+.vid-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%;
+}
+
+.vid-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+main hr {
+    margin: 42px 0;
+}
+
+.author-card {
+    display: flex;
+}
+
+.author-card img {
+    width: 60px;
+    height: 60px;
+}
+
+.bio p {
+    font-size: 16px;
+    color: #3b3b4f;
+    letter-spacing: 0;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.bio a {
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    margin-left: 20px;
+}
+
+.tweet {
+    font-size: 19px;
+}
+
+.tweet p {
+    margin-top: 44px;
+}
+
+.footer-desc p {
+    line-height: 30px;
+}
+
+.blog-2 p:nth-child(1) {
+    font-size: 23.5px;
+    margin-bottom: 41px;
+}
+
+.tweet p:nth-child() {
+    margin-top: 33px;
+}
+
+.tweet button {
+    font-size: 19px;
+    border: 4px solid black;
+    background: #dfdfe2;
+    color: black;
+    padding: 5px 20px;
+    cursor: pointer;
+}
+
+.nav-right button:hover {
+    background-color: #fecc4c;
+    border-width: 3px;
+    border-color: #f1a02a;
+    background-image: none;
+}
+
+.tweet button:hover {
+    background-color: black;
+    color: #dfdfe2;
+}
+
+footer {
+    position: relative;
+    color: #1b1b32;
+    background: #eeeef0;
+    line-height: 1.6;
+}
+
+.footer-container {
+    padding: 30px 25px;
+    font-size: 16px;
+    overflow-x: hidden;
+}
+
+h4.trending {
+    font-size: 16px;
+    text-align: center;
+    padding: 0 15px 15px;
+    margin-top: 32px;
+}
+
+.donate-link {
+    font-size: 18px;
+}
+
+.donate-link a {
+    font-size: 18px;
+    text-decoration: underline;
+}
+
+.trending-guides {
+    display: flex;
+    flex-direction: column;
+}
+
+.col,
+.col-3-left,
+.col-3-right {
+    display: flex;
+    flex-direction: column;
+}
+
+.col a {
+    padding: 5px 0;
+}
+
+.charity-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.charity-links a {
+    padding: 5px 10px;
+}
+
+.footer-top + hr {
+    display: none;
+}
+
+.footer-desc {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.text-bar a {
+	color: white;
+	text-decoration: none;
+	font-size: 14px;
+	font-weight: bold;
+	font-family: Lato, sans-serif;
+}
+
+
+.nav-right a:hover {
+    background-color: #fff;
+    color: black;
+}
+
+.text-bar a:nth-child(2) {
+    text-decoration: underline;
+}
+
+.blog-2 p.link a {
+    color: black;
+}
+
+.text-bar a:nth-child(2):hover {
+    text-decoration: none;
+}
+
+.blog-2 p.link a:hover {
+    text-decoration: none;
+}
+
+/* Responsive layout */
+
+@media screen and (width <=407px) {
+    main {
+        margin-top: 90px;
+    }
+}
+
+@media screen and (width >= 500px) {
+    .nav-right a {
+        display: inline-block;
+    }
+
+    .date {
+        margin-top: 100px;
+    }
+
+    .blog-2 {
+        margin: auto;
+        width: 84%;
+    }
+
+    header .text-bar,
+    .text-bar a {
+        font-size: 17px;
+    }
+
+    main {
+        margin-top: 30px;
+    }
+
+    main h1 {
+        font-size: 50px;
+    }
+
+    .trending-guides {
+        flex-flow: row wrap;
+    }
+
+    .col-1,
+    .col-2 {
+        flex: 1 0 45%;
+    }
+
+    .col-3 {
+        flex: 1 0 100%;
+        flex-direction: row;
+    }
+
+    .col-3-left,
+    .col-3-right {
+        flex: 1 0 45%;
+    }
+}
+
+@media screen and (width >= 700px) {
+    .blog {
+        display: block;
+    }
+
+    .blog-2 {
+        width: 90%;
+    }
+}
+
+@media screen and (width >= 800px) {
+    .blog-2 p,
+    ul li {
+        font-size: 22px;
+    }
+
+    .blog-2 p.label {
+        font-size: 17.2px;
+    }
+
+    .tweet p,
+    .tweet button {
+        font-size: 22px;
+    }
+
+    .blog-2 p:nth-child(1) {
+        font-size: 27.5px;
+    }
+
+    .footer-container {
+        padding: 2.3rem 9rem 1rem;
+    }
+
+    .col-1,
+    .col-2,
+    .col-3 {
+        flex: 1 0 25%;
+    }
+
+    .col-1 {
+        margin-right: 1rem;
+    }
+
+    .col-3 {
+        flex-direction: column;
+    }
+}
+
+@media screen and (width >= 1000px) {
+    .nav-left {
+        display: flex;
+    }
+
+    .col-1 {
+        margin-right: initial;
+    }
+
+    .nav-left,
+    .nav-right {
+        width: 35%;
+    }
+
+    .nav-image {
+        width: 25%;
+    }
+
+    .nav-image img {
+        width: 80%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .blog-2 {
+        width: 75%;
+        margin: 0;
+    }
+
+    .thumbnail-photo {
+        margin: 5rem auto;
+        width: 75%;
+    }
+
+    .vid-container iframe {
+        width: 90%;
+        height: 90%;
+    }
+}
+
+@media screen and (width >= 1200px) {
+    .footer-container {
+        padding: 1.7rem 5.1rem;
+    }
+
+    .footer-top {
+        display: flex;
+        border-bottom: 1px solid #b2b2ba;
+        gap: 1.2rem;
+    }
+
+    h4.charity {
+        display: none;
+    }
+
+    .footer-desc {
+        flex: 1 0 45%;
+        margin-bottom: 30px;
+    }
+
+    .trending-row {
+        flex: 1 0 58%;
+        margin: 0 0 3rem;
+    }
+}
